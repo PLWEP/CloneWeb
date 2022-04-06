@@ -1,0 +1,309 @@
+/*
+    font-family: 'Kanit', sans-serif;
+    color : #EFFFFD, #EEEDDE, #488FB1, #337391
+*/
+
+body {
+    font: 12px/24px 'Kanit', sans-serif;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    background-image: url(../res/background.png);
+}
+
+.container {
+    width: 90%;
+    margin: 40px auto;
+    background-color: white;
+    border-top: 3px solid salmon;
+    border-bottom: 3px solid salmon;
+}
+
+.bookmark {
+    width: 100%;
+    background-color: rgba(238, 237, 222, 0.9);
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.bookmark img {
+    display: inline-block;
+    width: 12px;
+}
+
+.bookmark p {
+    font-size: 12px;
+    margin-left: 3px;
+    display: inline-block;
+}
+
+.header {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.logo {
+    width: 60%;
+    margin: 5px;
+}
+
+.minimenu {
+    margin: 5px;
+    width: 10%;
+}
+
+.minimenu img {
+    margin: 0px 5px;
+    width: 32px;
+}
+
+.profile {
+    width: 30%;
+    margin: 5px;
+    display: flex;
+}
+
+.nama {
+    margin: 1px 5px;
+}
+
+.nama p {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.borderprofile {
+    width: 64px;
+    height: 64px;
+    border: 1px solid black;
+    background-color: #EFFFFD;
+    box-sizing: border-box;
+    margin: 1px 5px;
+}
+
+.borderprofile img {
+    margin-top: 1px;
+    width: 64px;
+}
+
+.topbar {
+    width: 100%;
+    height: 40px;
+    background-color: #488FB1;
+    overflow: hidden;
+}
+
+.topbar .lms {
+    float: left;
+    line-height: 40px;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0px 10px;
+    background-color: #337391;
+}
+
+.search, .inputbox {
+    height: 40px;
+    padding: 0px 5px;
+    float: right;
+    background-color: #337391;
+}
+
+.inputbox {
+    float: left;
+}
+
+.search img {
+    margin: 10px;
+    width: 16px;
+}
+
+.inputbox form {
+    position: relative;
+}
+
+.inputbox form label {
+    position: absolute;
+    top: 7px;
+    left: 5px;
+}
+
+.inputbox form input {
+    width: 150px;
+    height: 20px;
+    margin: 6px 0px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+}
+
+.menukonten, .nav {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.tag {
+    display: flex;
+    height: 20px;
+    background-color: #EEEDDE;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.tag img {
+    margin: 0px 5px;
+}
+
+.tag p {
+    margin: 0px 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.tagkonten {
+    box-sizing: border-box;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+.course .tagkonten li {
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    margin: 15px 20px;
+    display: block;
+    width: 230px;
+    height: 150px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.course .tagkonten li img {
+    margin: 0px;
+    width: 216px;
+    height: 100px;
+}
+
+.course .tagkonten li p {
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.nav1, .nav2 {
+    width: 49.7%;
+    height: 10px;
+    box-sizing: border-box;
+    padding: 2px;
+    float: left;
+}
+
+.navtittle {
+    margin: 10px 0px;
+    padding: 5px;
+    background-color: #EEEDDE;
+}
+
+.tagnav {
+    display: flex;
+    height: 20px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.tagnav img {
+    margin: 0px 5px;
+}
+
+.tagnav p {
+    margin: 0px 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.kontennav {
+    padding: 10px;
+}
+
+.kontennav li {
+    margin: 15px 0px;
+    display: flex;
+}
+
+.kontennav li img {
+    width: 32px;
+    margin: 0px 5px;
+}
+
+.kontennav li a {
+    display: inline;
+    line-height: 16px;
+    text-decoration: 0;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.nav2 .kontennav p {
+    font-weight: 900;
+    font-size: 13px;
+}
+
+/* Kalender */
+.calendar {
+    position: relative;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 5px 50px rgba(#000, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.calendar__date {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    grid-gap: 10px;
+    box-sizing: border-box;
+}
+
+.calendar__day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.calendar__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    color: #262626;
+}
+
+/* Clear Fix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
